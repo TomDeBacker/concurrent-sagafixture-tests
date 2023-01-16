@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<artifactId>concurrent-sagafixture-tests</artifactId>
+
+	<dependencies>
+		<dependency>
+			<artifactId>axon-spring-boot-starter</artifactId>
+			<groupId>org.axonframework</groupId>
+		</dependency>
+		<dependency>
+			<artifactId>junit-jupiter</artifactId>
+			<groupId>org.junit.jupiter</groupId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<groupId>org.junit.jupiter</groupId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<artifactId>axon-test</artifactId>
+			<groupId>org.axonframework</groupId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<groupId>org.mockito</groupId>
+			<scope>test</scope>
+			<version>${mockito-junit-jupiter.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>hamcrest</artifactId>
+			<groupId>org.hamcrest</groupId>
+			<scope>test</scope>
+			<version>${hamcrest.version}</version>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<artifactId>junit-bom</artifactId>
+				<groupId>org.junit</groupId>
+				<scope>import</scope>
+				<type>pom</type>
+				<version>${junit.version}</version>
+			</dependency>
+			<dependency>
+				<artifactId>axon-bom</artifactId>
+				<groupId>org.axonframework</groupId>
+				<scope>import</scope>
+				<type>pom</type>
+				<version>${axon.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<groupId>org.example</groupId>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<properties>
+		<axon.version>4.6.3</axon.version>
+		<hamcrest.version>2.2</hamcrest.version>
+		<junit.version>5.9.2</junit.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<mockito-junit-jupiter.version>4.11.0</mockito-junit-jupiter.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<version>1.0-SNAPSHOT</version>
+
+</project>
